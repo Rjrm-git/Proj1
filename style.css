@@ -362,23 +362,21 @@ article .icon {
   position: relative;
 }
 
+.projects-title {
+  text-align: center;
+  margin-bottom: 2rem; 
+}
+
 .projects-container {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 100%; 
+  flex-wrap: wrap; 
+  justify-content: space-between; /* Distribute space between items */
 }
 
 .project-card {
-  width: 100%; /* Default width for smaller screens */
-  margin: 10px;
-  box-sizing: border-box; 
-}
-
-@media (min-width: 768px) {
-  .project-card {
-    width: calc(50% - 20px); /* 2 cards per row on medium screens */
-  }
+  width: calc(33.33% - 20px); /* 3 cards per row with some margin */
+  margin-bottom: 20px; /* Add some vertical spacing */
+  box-sizing: border-box;
 }
 
 @media (min-width: 1024px) {
